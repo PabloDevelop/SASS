@@ -1,0 +1,222 @@
+$primaryFont: Helvetica, sans-serif
+$primaryColor: #fff
+$secondaryColor: #000
+
+body
+  font: 100% $primaryFont
+  color: $primaryColor
+  margin: 50px 15%
+
+
+div > img[class="logo"]
+  width: 74px
+  height: 21px
+  margin: 10px
+
+img[class="vector"]
+  width: 80px
+  height: 72px
+
+h1
+  font:
+    family: $primaryFont
+    size: 32px
+    weight: bold
+
+svg
+  width: 80px
+  height: 120px
+  display: flex
+  justify-content: center
+  text-align: center
+  padding: 5px
+
+.flex
+  display: flex
+  justify-content: space-between
+  background-color: $primaryColor
+
+.flexRow
+  display: flex
+  justify-content: center
+  align-items: center
+  color: $secondaryColor
+  background-color: $primaryColor
+
+.flexCenter
+  display: flex
+  justify-content: center
+
+.mainButton
+  border-color: #000000
+  border-style: 1px,solid
+  border-radius: 4px
+  line-height: 10px
+  font-family: $primaryFont
+
+.fullImage
+  width: 100%
+
+  font:
+    family: $primaryFont
+    size: 0.8em
+
+
+.flex-container
+  @extend .flex
+
+.flex-container-row
+  @extend .flexRow
+
+.flex-container-center
+  @extend .flexCenter
+  padding: 60px 0px
+
+.flex-container-row > div
+  width: 50%
+
+.primaryButton
+  @extend .mainButton
+
+.secondaryButton
+  @extend .mainButton
+  margin-left: 30%
+  line-height: 20px
+
+.mainImage
+  @extend .fullImage
+
+.fullSection
+  margin: 40px 0px 40px 0px
+
+
+.hero-image
+  background-image: url(../assets/main.jpg)
+  background-color: #cccccc
+  max-height: 100%
+  height: 500px
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  position: relative
+
+.hero-text
+  text-align: left
+  position: absolute
+  top: 50%
+  left: 10%
+  transform: translate -10%  -50%
+  color: $secondaryColor
+
+
+#seccion1, #seccion2
+  display: none
+
+
+//Comienzo animacion
+
+.slidel
+  animation-duration: 0.5s
+  animation-name: slideleft
+
+@keyframes slideleft
+  from
+    margin-right: 100%
+  to
+    margin-right: 0%
+
+.slider
+  animation-duration: 0.5s
+  animation-name: slideright
+
+@keyframes slideright
+  from
+    margin-left: 100%
+  to
+    margin-left: 0%
+
+//Fin animacion
+
+main
+  div
+    p
+      margin: 10px
+
+
+
+.bold
+  font:
+    family: $primaryFont
+    size: 32px
+    weight: normal
+
+
+.footerFont
+  font:
+    family: $primaryFont
+    size: 12px
+    weight: normal
+  color: $secondaryColor
+
+.boldfont
+  @extend .bold
+
+.footerFont
+  @extend .footerFont
+
+
+.grid-container
+  display: grid
+  grid-gap: 15px
+  grid-template-columns: repeat(auto-fill, minmax(16em, 4fr))
+
+.card
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+  transition: 0.3s
+
+  &:hover
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4)
+
+div[class="sectionRheel"]
+  margin: 0px 0px 80px 0px
+
+
+.clip
+  animation: slide 6s infinite
+
+
+@keyframes slide
+  from
+    transform: translateY(20px)
+
+  50%
+    transform: translateY(-10px)
+
+  to
+    transform: translateY(20px)
+
+
+
+.pButton
+  @extend .primaryButton
+  -webkit-transition: background-color 0.3s ease-out
+  -moz-transition: background-color 0.3s ease-out
+  -o-transition: background-color 0.3s ease-out
+  transition: background-color 0.3s ease-out
+  background-color: #ffffff
+
+  &:hover
+    background-color: #000000
+    color: #ffffff
+
+.sButton
+  @extend .secondaryButton
+  -webkit-transition: background-color 0.3s ease-out
+  -moz-transition: background-color 0.3s ease-out
+  -o-transition: background-color 0.3s ease-out
+  transition: background-color 0.3s ease-out
+  background-color: #ffffff
+
+  &:hover
+    background-color: #000000
+    color: #ffffff

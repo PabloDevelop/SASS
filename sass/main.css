@@ -1,0 +1,166 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #fff;
+  margin: 50px 15%; }
+
+div > img[class="logo"] {
+  width: 74px;
+  height: 21px;
+  margin: 10px; }
+
+img[class="vector"] {
+  width: 80px;
+  height: 72px; }
+
+h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: bold; }
+
+svg {
+  width: 80px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 5px; }
+
+.flex, .flex-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff; }
+
+.flexRow, .flex-container-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  background-color: #fff; }
+
+.flexCenter, .flex-container-center {
+  display: flex;
+  justify-content: center; }
+
+.mainButton, .primaryButton, .pButton, .secondaryButton, .sButton {
+  border-color: #000000;
+  border-style: 1px, solid;
+  border-radius: 4px;
+  line-height: 10px;
+  font-family: Helvetica, sans-serif; }
+
+.fullImage, .mainImage {
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.8em; }
+
+.flex-container-center {
+  padding: 60px 0px; }
+
+.flex-container-row > div {
+  width: 50%; }
+
+.secondaryButton, .sButton {
+  margin-left: 30%;
+  line-height: 20px; }
+
+.fullSection {
+  margin: 40px 0px 40px 0px; }
+
+.hero-image {
+  background-image: url(../assets/main.jpg);
+  background-color: #cccccc;
+  max-height: 100%;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate -10% -50%;
+  color: #000; }
+
+#seccion1, #seccion2 {
+  display: none; }
+
+.slidel {
+  animation-duration: 0.5s;
+  animation-name: slideleft; }
+
+@keyframes slideleft {
+  from {
+    margin-right: 100%; }
+  to {
+    margin-right: 0%; } }
+.slider {
+  animation-duration: 0.5s;
+  animation-name: slideright; }
+
+@keyframes slideright {
+  from {
+    margin-left: 100%; }
+  to {
+    margin-left: 0%; } }
+main div p {
+  margin: 10px; }
+
+.bold, .boldfont {
+  font-family: Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: normal; }
+
+.footerFont {
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  color: #000; }
+
+.grid-container {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(16em, 4fr)); }
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s; }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4); }
+
+div[class="sectionRheel"] {
+  margin: 0px 0px 80px 0px; }
+
+.clip {
+  animation: slide 6s infinite; }
+
+@keyframes slide {
+  from {
+    transform: translateY(20px); }
+  50% {
+    transform: translateY(-10px); }
+  to {
+    transform: translateY(20px); } }
+.pButton {
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+  background-color: #ffffff; }
+  .pButton:hover {
+    background-color: #000000;
+    color: #ffffff; }
+
+.sButton {
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+  background-color: #ffffff; }
+  .sButton:hover {
+    background-color: #000000;
+    color: #ffffff; }
+
+/*# sourceMappingURL=main.css.map */
